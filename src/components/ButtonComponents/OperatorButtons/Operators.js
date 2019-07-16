@@ -2,6 +2,15 @@ import React from "react";
 
 //import any components needed
 
+
+
+import { operators} from '../path/to/data';
+
+
+
+
+const [operatorsState, setOperatorState] =useState(operators);
+
 //Import your array data to from the provided data file
 
 const Operators = () => {
