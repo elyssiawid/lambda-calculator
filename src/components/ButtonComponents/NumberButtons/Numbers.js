@@ -1,20 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 //import any components needed
 
-import { numbers } from '../path/to/data';
-import { operators} from '../path/to/data';
-import { specials } from '../path/to/data';
-
-
-
-const [numberState, setNumberState] = useState(numbers);
-const [operatorsState, setOperatorState] =useState(operators);
-const [specialsState, setSpecialsState] = useState(specials);
+import { numbers } from "../../../data";
 
 //Import your array data to from the provided data file
 
 const Numbers = () => {
+  const [numberState, setNumberState] = useState(numbers);
+  console.log("HEY", numberState);
+
   // STEP 2 - add the imported data to state
   return (
     <div>
@@ -24,3 +19,5 @@ const Numbers = () => {
     </div>
   );
 };
+
+export default Numbers;
